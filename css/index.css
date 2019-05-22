@@ -186,8 +186,8 @@ nav a:hover {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .top-content .parallax {
-  height: 50rem /*3456px*/;
-  background: url("../assets/img/concert-984237.jpg");
+  height: 45rem /*3456px*/;
+  background: url("../assets/img/concert-984237-min.jpg");
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,7 +258,7 @@ nav a:hover {
   font-size: 4rem;
   margin: 2rem;
   font-family: 'Stylish', sans-serif;
-  color: #FDFFFC;
+  color: #FF9F1C;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .middle-content p {
@@ -270,7 +270,7 @@ nav a:hover {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .middle-content .parallax-middle {
-  height: 40rem /*3456px*/;
+  height: 50rem /*3456px*/;
   background: url("../assets/img/airport-2373727.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -296,6 +296,14 @@ nav a:hover {
   text-decoration: none;
   font-family: sans-serif;
 }
+.testimonial-content h1 {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-size: 4rem;
+  font-family: 'Stylish', sans-serif;
+  color: #FF9F1C;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
 .testimonial-content .carousel {
   margin: 5rem;
 }
@@ -311,7 +319,6 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 500px;
   position: relative;
   overflow: hidden;
   margin-top: 16px;
@@ -327,8 +334,8 @@ nav a:hover {
   justify-content: center;
   align-items: none;
   flex-direction: row;
-  color: #fff;
-  background-color: #333;
+  color: black;
+  background-color: #FF9F1C;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
@@ -352,13 +359,13 @@ nav a:hover {
   right: 25px;
   transform: translate(0, -50%);
 }
-.carousel img {
+.carousel .card {
   width: 100%;
   display: none;
 }
 body {
   margin: 0 auto;
-  background-color: #011627;
+  background-color: black;
 }
 html {
   scroll-behavior: smooth;
