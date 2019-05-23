@@ -39,7 +39,7 @@
     <img class="logo" src="./assets/img/logo_transparent.png" alt="logo" />
     <span><i class="fas fa-bars hamburger" style="font-size: 3rem; color:#FF9F1C; padding-top: 2rem;"></i></span>
     <a href="#">Home</a>
-    <a href="#">About Us</a>
+    <a href="#about-us">About Us</a>
   </nav>
 
   <!-- Top Content -->
@@ -56,15 +56,14 @@
           sign up now
         </button>
         <p class="sub">
-          already using trip split?
-          <a class="sub" href="https://hungry-carson-cb2f6b.netlify.com/login">sign in</a>
+          already using trip split? <a class="sub" href="https://hungry-carson-cb2f6b.netlify.com/login">sign in</a>
         </p>
       </div>
-      <a href="#middle">&dArr;</a>
+      <a class="arrow" href="#middle">&dArr;</a>
     </div>
   </section>
 
-  <!-- Middle Content, p.1 -->
+  <!-- What We Do -->
   <section class="middle-content" id="middle">
     <div class="parallax-middle">
       <div class="left"></div>
@@ -76,7 +75,7 @@
           traveling with their friends and family. where is the fun in that?</p>
         <p>we provide our users with an easy interface to track their expenses, so they can enjoy their friends,
           stress-free.</p>
-        <a href="#test">&dArr;</a>
+        <a class="arrow" href="#test">&dArr;</a>
       </div>
     </div>
   </section>
@@ -85,24 +84,36 @@
   <section class="middle-content2" id="middle2">
     <div class="parallax-middle2">
       <div class="features">
-        <h1>Features</h1>
-        <p>create a trip</p>
+        <h1>how it works</h1>
 
-        <p>add your friends</p>
+        <div class="people">
+          <div>
+            <p class="icon"><i class="fas fa-mobile-alt"></i></p>
+            <p>create a trip</p>
+          </div>
 
-        <p>log who paid for what</p>
+          <div>
+            <p class="icon"><i class="fas fa-users"></i></p>
+            <p>add your friends</p>
+          </div>
 
-        <p>we calculate who owes who what after you close the trip.</p>
+          <div>
+            <p class="icon"><i class="fas fa-table"></i></p>
+            <p>log who paid for what</p>
+          </div>
 
-        <p>simple!</p>
+          <div>
+            <p class="icon"><i class="fas fa-route"></i></p>
+            <p>we take care of the rest!</p>
+          </div>
 
-        <a href="#test">&dArr;</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Middle Content, p.3 -->
-  <section class="middle-content3" id="middle3">
+  <!-- <section class="middle-content3" id="middle3">
     <div class="parallax-middle3">
       <div class="left">
         <h1>we happy? p3</h1>
@@ -119,7 +130,7 @@
       <div class="right-content"></div>
       <a href="#test">&dArr;</a>
     </div>
-  </section>
+  </section> -->
 
   <!-- Testimonial Content -->
   <section class="testimonial-content" id="test">
@@ -128,7 +139,7 @@
       <!-- CAROUSEL COMPONENT -->
       <div class="carousel">
         <div class="left-button">
-          < </div> <div class="card" style="width:30rem; background-color: #C63E60;">
+          < </div> <div class="card">
             <img class="card-img-top" src="./assets/img/black-man-3532117_1920.jpg" alt="Card image" />
             <div class="card-body">
               <h4 class="card-title" style="font-family: Stylish; color: black;">
@@ -141,7 +152,7 @@
             </div>
         </div>
 
-        <div class="card" style="width:30rem; background-color: #C63E60;">
+        <div class="card">
           <img class="card-img-top" src="./assets/img/crazy-3126441_1920.jpg" alt="Card image" />
           <div class="card-body">
             <h4 class="card-title" style="font-family: Stylish; color: black;">
@@ -154,7 +165,7 @@
           </div>
         </div>
 
-        <div class="card" style="width:30rem; background-color: #C63E60;">
+        <div class="card">
           <img class="card-img-top" src="./assets/img/credit-card-1599787_1920.jpg" alt="Card image" />
           <div class="card-body">
             <h4 class="card-title" style="font-family: Stylish; color: black;">
@@ -168,6 +179,45 @@
         </div>
 
         <div class="right-button">></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="aboutus" id="about-us">
+    <h1>about us</h1>
+    <div class="people">
+      <div>
+        <img src="./assets/img/jacob.png" alt="Jacob">
+        <p>Jacob Seppanen</p>
+        <p>Team Lead</p>
+        <p style="font-size: 3rem;"> <a href="https://github.com/jbseppanen" target="_blank"><i class="fab fa-github"></i></a> <a
+            href="https://twitter.com/JacobSeppanen" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/jacobseppanen/" target="_blank"><i class="fab fa-linkedin"></i></a> </p>
+      </div>
+      <div>
+        <img src="./assets/img/alexis.png" alt="Alexis">
+        <p>Alexis Carr</p>
+        <p>UI Developer</p>
+        <p style="font-size: 3rem;"> <a href="https://github.com/alexisjcarr" target="_blank"><i class="fab fa-github"></i></a> <a
+            href="https://twitter.com/THEAlexisCarr" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/alexis-j-carr-17a20865/" target="_blank"><i class="fab fa-linkedin"></i></a> </p>
+      </div>
+      <div>
+        <img src="./assets/img/navid.png" alt="Navid">
+        <p>Navid Karami</p>
+        <p>Front-End Developer</p>
+        <p style="font-size: 3rem;"> <a href="https://github.com/navidgs" target="_blank"><i class="fab fa-github"></i></a> <a
+            href="https://twitter.com/navidivangsz" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/navid-karami-z/" target="_blank"><i class="fab fa-linkedin"></i></a> </p>
+      </div>
+      <div>
+        <img src="./assets/img/omar.png" alt="Omar">
+        <p>Omar Okla</p>
+        <p>Back-End Developer</p>
+        <p style="font-size: 3rem;"> <a href="https://github.com/ok1a" target="_blank"><i class="fab fa-github"></i></a> <a
+            href="https://twitter.com/omar_okla" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/omarokla/" target="_blank"><i class="fab fa-linkedin"></i></a> </p>
       </div>
     </div>
   </section>

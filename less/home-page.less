@@ -105,9 +105,9 @@
   z-index: 10;
 
   h1 {
-    padding-top: 5rem;
+    padding: 1rem;
     font-size: 4rem;
-    margin: 2rem;
+    margin-left: 2rem;
     font-family: @main-font;
     color: @brightyellow;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
@@ -125,8 +125,8 @@
   }
 
   .parallax-middle {
-    // padding-top: 5rem;
-    height: 50rem /*3456px*/;
+    padding-top: 2rem;
+    height: 45rem /*3456px*/;
     background: url("../assets/img/caucasian-3385071_1920.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -137,14 +137,17 @@
     flex-wrap: wrap;
 
     .left {
-      width: 50%;
+      width: 40%;
     }
 
     .right-content {
       // make right aligned on page
       display: border-box;
-      height: 70%;
-      margin-top: 4rem;
+      // height: 50%;
+      margin: 4rem;
+      margin-right: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 0rem;
       width: 50%;
       border: 2px solid @brickred;
       border-radius: 1.2rem;
@@ -159,6 +162,10 @@
         color: @babypowder;
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
           1px 1px 0 black;
+      }
+
+      .arrow {
+        display: none;
       }
     }
 
@@ -180,6 +187,7 @@
 
   h1 {
     padding-top: 5rem;
+    padding-left: 3rem;
     font-size: 4rem;
     margin: 2rem;
     font-family: @main-font;
@@ -191,8 +199,10 @@
   p {
     font-family: @main-font;
     font-size: 1.5rem;
-    margin: 2rem;
-    text-align: justify;
+    margin: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
     color: @babypowder;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
       1px 1px 0 black;
@@ -200,35 +210,23 @@
 
   .parallax-middle2 {
     // padding-top: 5rem;
-    height: 50rem /*3456px*/;
-    background-color: black;
+    // height: 50rem /*3456px*/;
+    background-color: @masstrichtblue;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
 
-    .left {
-      width: 50%;
-    }
-
-    .right-content {
-      // make right aligned on page
+    .features .people {
       padding: 3rem;
-      width: 50%;
-    }
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
 
-    a {
-      //animate this arrow (bouncing)
-      max-width: 100%;
-      color: @babypowder;
-      font-size: 3rem;
-      text-align: center;
-      margin-left: 50%;
-      text-decoration: none;
-      font-family: sans-serif;
+      .icon {
+        font-size: 6rem;
+      }
     }
   }
 }
@@ -304,6 +302,50 @@
     color: @brightyellow;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
       1px 1px 0 black;
+  }
+
+  .card {
+    background-color: @brickred;
+    width: 50% !important;
+  }
+}
+
+.aboutus {
+  background-color: @masstrichtblue;
+  padding: 5%;
+  z-index: 10;
+
+  h1 {
+    font-size: 4rem;
+    margin: 2rem;
+    font-family: @main-font;
+    color: @brightyellow;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-family: @main-font;
+    margin: 1rem;
+    color: @babypowder;
+    text-align: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+
+  .people {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+
+    img {
+      border: 5px solid #C63E60; 
+      border-radius: 40%; 
+      width: 80%;
+    }
   }
 }
 
@@ -415,7 +457,7 @@
     z-index: 10;
 
     h1 {
-      padding-top: 5rem;
+      padding-top: 1rem;
       font-size: 4rem;
       margin: 2rem;
       font-family: @main-font;
@@ -452,7 +494,7 @@
 
       .right-content {
         // make right aligned on page
-        padding: 3rem;
+        padding: 0rem;
         width: 100%;
       }
 
@@ -469,13 +511,64 @@
     }
   }
 
+  .middle-content2 {
+    z-index: 10;
+
+    h1 {
+      padding-top: 5rem;
+      padding-left: 3rem;
+      font-size: 4rem;
+      margin: 2rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    p {
+      font-family: @main-font;
+      font-size: 1.5rem;
+      margin: 5rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-align: center;
+      color: @babypowder;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .parallax-middle2 {
+      // padding-top: 5rem;
+      // height: 50rem /*3456px*/;
+      background-color: @masstrichtblue;
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+
+      .features .people {
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .icon {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+
   .testimonial-content {
     display: flex;
     justify-content: center;
 
     h1 {
-      margin-top: 5rem;
-      // padding-left: 5rem;
+      ////margin-top: 5rem;
+      padding-left: 3rem;
+      margin-bottom: 2rem;
       font-size: 4rem;
       // margin: 1rem;
       font-family: @main-font;
@@ -484,4 +577,300 @@
         1px 1px 0 black;
     }
   }
+
+  .aboutus {
+    background-color: @masstrichtblue;
+    padding: 5%;
+    z-index: 10;
+
+    h1 {
+      font-size: 4rem;
+      margin: 2rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: @main-font;
+      margin: 1rem;
+      color: @babypowder;
+      text-align: center;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .people {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 3rem;
+    }
+  }
 }
+
+@media @phone {
+  .top-content {
+    background-color: @brickred;
+    margin-top: 5rem;
+    font-family: sans-serif;
+    z-index: 10;
+
+    h1 {
+      padding-top: 3rem;
+      font-size: 3rem;
+      margin: 2rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: @main-font;
+      margin: 2rem;
+      text-align: left;
+      color: @babypowder;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .parallax {
+      height: 35rem /*3456px*/;
+      // filter: blur(5px);
+      background: url("../assets/img/concert-984237.jpg");
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+
+      .left-content {
+        filter: none;
+        padding: 0.5rem;
+        width: 100%;
+
+        input[type="text"] {
+         display: none;
+        }
+
+        button {
+          width: 100%;
+          filter: none;
+          opacity: 0.9;
+          padding: 1.2rem 5rem;
+          border: 0.2rem solid black;
+          border-radius: 0.8rem;
+          box-sizing: border-box;
+          background-color: @maxbluegreen;
+          color: @babypowder;
+          z-index: -1;
+
+          &:hover {
+            background-color: @brightyellow;
+          }
+        }
+
+        .sub {
+          margin-top: 0;
+          font-family: @main-font;
+          font-size: 1.2rem;
+          text-align: left;
+
+          a {
+            // margin-left: 0;
+            color: @brightyellow;
+
+            &:hover {
+              color: @brickred;
+            }
+          }
+        }
+      }
+
+      .arrow {
+        display: none;
+      }
+    }
+  }
+
+  .middle-content {
+    z-index: 10;
+
+    h1 {
+      padding-top: 1rem;
+      font-size: 3rem;
+      margin: 2rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    p {
+      font-family: @main-font;
+      font-size: 1.2rem;
+      margin: 2rem;
+      text-align: justify;
+      color: @babypowder;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .parallax-middle {
+      // padding-top: 5rem;
+      height: 50rem /*3456px*/;
+      background: url("../assets/img/caucasian-3385071_1920.jpg");
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+
+      .left {
+        width: 0%;
+      }
+
+      .right-content {
+        // make right aligned on page
+        padding: 0rem;
+        width: 100%;
+
+        .arrow {
+          display: none;
+        }
+      }
+
+      a {
+        //animate this arrow (bouncing)
+        max-width: 100%;
+        color: @babypowder;
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 50%;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+    }
+  }
+
+  .middle-content2 {
+    z-index: 10;
+
+    h1 {
+      padding-top: 5rem;
+      padding-left: 3rem;
+      font-size: 3rem;
+      margin: 2rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    p {
+      font-family: @main-font;
+      font-size: 1.2rem;
+      margin: 5rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-align: center;
+      color: @babypowder;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .parallax-middle2 {
+      // padding-top: 5rem;
+      // height: 50rem /*3456px*/;
+      background-color: @masstrichtblue;
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+
+      .features .people {
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .icon {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+
+  .testimonial-content {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      ////margin-top: 5rem;
+      // padding-left: 5rem;
+      font-size: 3rem;
+      // margin: 1rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .card {
+      width: 68% !important;
+    }
+  }
+
+  .aboutus {
+    background-color: @masstrichtblue;
+    padding: 5%;
+    z-index: 10;
+
+    h1 {
+      font-size: 3rem;
+      margin: 2rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: @main-font;
+      margin: 1rem;
+      color: @babypowder;
+      text-align: center;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .people {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 3rem;
+
+      img {
+        border: 5px solid #C63E60; 
+        border-radius: 40%; 
+        width: 50%;
+      }
+    }
+  }
+}
+
