@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS and required scripts -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,39 +22,49 @@
   <link rel="stylesheet" href="./css/index.css" />
   <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet" />
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
   <!-- My Components -->
   <script src="./components/carousel/Carousel.js" async></script>
+  <script src="./components/Hamburger.js" async></script>
 
   <title>trip split</title>
 </head>
 
 <body>
+  <!-- Navigation -->
   <nav>
     <img class="logo" src="./assets/img/logo_transparent.png" alt="logo" />
+    <span><i class="fas fa-bars hamburger" style="font-size: 3rem; color:#FF9F1C; padding-top: 2rem;"></i></span>
     <a href="#">Home</a>
     <a href="#">About Us</a>
   </nav>
 
+  <!-- Top Content -->
   <section class="top-content">
     <div class="parallax">
       <div class="left-content">
-        <h1>trip split.</h1>
-        <p>we send them the IOUs, so you don't have to</p>
+        <h1>trip split</h1>
         <p>
-          lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore.
+          tired of paying for a friends uber ride or lunch while on vacation and never getting paid back?
         </p>
+        <p>we send them the IOUs, so you don't have to</p>
         <input type="text" name="email" placeholder="Email" />
-        <!-- <input type="submit" value="Sign Up Now" /> -->
-        <button onclick="window.location.href = 'https://hungry-carson-cb2f6b.netlify.com/signup';">sign up now</button>
+        <button onclick="window.location.href = 'https://hungry-carson-cb2f6b.netlify.com/signup';">
+          sign up now
+        </button>
         <p class="sub">
-          already using trip split? <a class="sub" href="https://hungry-carson-cb2f6b.netlify.com/login">sign in</a>
+          already using trip split?
+          <a class="sub" href="https://hungry-carson-cb2f6b.netlify.com/login">sign in</a>
         </p>
       </div>
       <a href="#middle">&dArr;</a>
     </div>
   </section>
 
+  <!-- Middle Content, p.1 -->
   <section class="middle-content" id="middle">
     <div class="parallax-middle">
       <div class="left"></div>
@@ -74,40 +84,99 @@
     </div>
   </section>
 
+  <!-- Features -->
+  <section class="middle-content2" id="middle2">
+    <div class="parallax-middle2">
+      <div class="features">
+        <h1>Features</h1>
+        <p>
+          your bones don't break, mine do. that's clear. your cells react to
+          bacteria and viruses differently than mine. you don't get sick, i
+          do. that's also clear. but for some reason, you and i react the
+          exact same way to water. we swallow it too fast, we choke. we get
+          some in our lungs, we drown. however unreal it may seem, we are
+          connected, you and i. we're on the same curve, just on opposite
+          ends.
+        </p>
+      </div>
+      <a href="#test">&dArr;</a>
+    </div>
+  </section>
+
+  <!-- Middle Content, p.3 -->
+  <section class="middle-content3" id="middle3">
+    <div class="parallax-middle3">
+      <div class="left">
+        <h1>we happy? p3</h1>
+        <p>
+          your bones don't break, mine do. that's clear. your cells react to
+          bacteria and viruses differently than mine. you don't get sick, i
+          do. that's also clear. but for some reason, you and i react the
+          exact same way to water. we swallow it too fast, we choke. we get
+          some in our lungs, we drown. however unreal it may seem, we are
+          connected, you and i. we're on the same curve, just on opposite
+          ends.
+        </p>
+      </div>
+      <div class="right-content"></div>
+      <a href="#test">&dArr;</a>
+    </div>
+  </section>
+
+  <!-- Testimonial Content -->
   <section class="testimonial-content" id="test">
     <div class="parallax-testimonial">
-        <h1>testimonials</h1>
+      <h1>testimonials</h1>
       <!-- CAROUSEL COMPONENT -->
       <div class="carousel">
         <div class="left-button">
-          <</div> <div class="card" style="width:30rem; background-color: #C63E60;">
-            <img class="card-img-top" src="./assets/img/black-man-3532117_1920.jpg" alt="Card image">
+          < </div> <div class="card" style="width:30rem; background-color: #C63E60;">
+            <img class="card-img-top" src="./assets/img/black-man-3532117_1920.jpg" alt="Card image" />
             <div class="card-body">
-              <h4 class="card-title" style="font-family: Stylish;">John Doe</h4>
-              <p class="card-text" style="font-family: Stylish; font-size: 1.5rem;">This app saved my marriage. My wife's brother never pays me back. Now he's being held accountable.</p>
+              <h4 class="card-title" style="font-family: Stylish; color: black;">
+                Chris
+              </h4>
+              <p class="card-text" style="font-family: Stylish; font-size: 1.5rem; color: black;">
+                This app saved my marriage. My wife's brother never pays me
+                back. Now he's being held accountable.
+              </p>
             </div>
         </div>
 
         <div class="card" style="width:30rem; background-color: #C63E60;">
-          <img class="card-img-top" src="./assets/img/crazy-3126441_1920.jpg" alt="Card image">
+          <img class="card-img-top" src="./assets/img/crazy-3126441_1920.jpg" alt="Card image" />
           <div class="card-body">
-            <h4 class="card-title" style="font-family: Stylish;">Jane Doe</h4>
-            <p class="card-text" style="font-family: Stylish; font-size: 1.5rem;">OMG YASSSSSSS!!!! Where was this app before I rage-screamed at all my friends last night?????</p>
+            <h4 class="card-title" style="font-family: Stylish; color: black;">
+              Jane
+            </h4>
+            <p class="card-text" style="font-family: Stylish; font-size: 1.5rem; color: black;">
+              OMG YASSSSSSS!!!! Where was this app before I rage-screamed at
+              all my friends last night?????
+            </p>
           </div>
         </div>
 
-        <!-- <div class="card" style="width:30rem; background-color: #C63E60;">
-          <img class="card-img-top" src="./assets/img/concert-984237.jpg" alt="Card image">
+        <div class="card" style="width:30rem; background-color: #C63E60;">
+          <img class="card-img-top" src="./assets/img/credit-card-1599787_1920.jpg" alt="Card image" />
           <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">Some example text.</p>
+            <h4 class="card-title" style="font-family: Stylish; color: black;">
+              John
+            </h4>
+            <p class="card-text" style="font-family: Stylish; font-size: 1.5rem; color: black;">
+              This app is amazing. It makes traveling with my friends so much
+              easier! Thanks, trip split!
+            </p>
           </div>
-        </div> -->
+        </div>
 
         <div class="right-button">></div>
       </div>
     </div>
   </section>
+
+  <footer>
+    <p>copyright trip split 2019</p>
+  </footer>
 </body>
 
 </html>
